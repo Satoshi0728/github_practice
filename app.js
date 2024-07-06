@@ -3,4 +3,8 @@ $("#addTodo").click(function() {
     $("#todoList").append("<li><input type = 'checkbox'>" + inputTodo + "</li>");
 
     $("#input").val("");
+
+    $("li").click(function() {
+        $(this).toggleClass("completed");
+    }  );
     });
